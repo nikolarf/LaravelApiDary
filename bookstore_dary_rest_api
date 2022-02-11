@@ -1,0 +1,461 @@
+{
+	"info": {
+		"_postman_id": "4620c055-231d-42c5-9e9a-e80cc4a90263",
+		"name": "My First Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://bookstore.test/api/test",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Oauth token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "qm0Joq6s1bpgzMqPUiP3A08gkWGWBm9hHugBulp1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "nikolaraf@hotmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gitarista1",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://bookstore.test/oauth/token",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE3ZTdmMjQ0YTBkYTMwYTc4NzljY2Y5YTZkZjZkMmFmY2UzNzUzMDc5MWM1ZTk5MTljODcwYjg4ZDg3M2RhYmVlMTU2YjhlOWEwZjk2ZTUiLCJpYXQiOjE2NDQ1MTA2NzksIm5iZiI6MTY0NDUxMDY3OSwiZXhwIjoxNjc2MDQ2Njc5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ehUBCu5ENBMxS9Lx-KfwUbpSdBfJqiXTx0higQ7_uHjEO1t5EZG6sXe7jrxrod3HJcgH1ffAbL6aLSQ68vvp8BKQcDcYOIQzKCQ8uzNqeNj239x9u-8qbBLqAEaVCJSxzdO1TpbmPoak2pBKj5ULL8ewlyHJ7YZ7-10hHo0S2R3EQuKxhv6D_jQygPKlF2en_Vsc1CqQxpPPSkeQqWANyL1tljzzNfShEEYlXvFvcRM2bqiUcYBdSGP8INfIq4wSfEsPEyoUnH06a1QI78fTjVHQMGxn0YFdG4Wa3EETgf1k6s7LIKFezrOmYaiZplzoTMo1uQZlOBbkg0CCgiyeQ-9AhEburv0yeRC6SkwVW9FmLhHa-x61ncLJ_7_eUdAgqU5KXb4CR0awyzLYKMLKrY-3lTUvVDKSBlrLBomsI0fd2W_LsHLrQLeV30aECCcGLOYHSKMqmNLtDIN1QhYRZYMGdo39B9D40DYTmDw4pOXhTRzWS0XGiSyFijBWKZaSUPbmyFCbVPbq4rAUh9qmLBX7oDVpdlKfeZiUKhoCzuqB6GoVmKnaUJ5U_J0iISlOqN8tfHb7BH5mkrbuSQSgdNgUxubAyRZay6TfeSnLYXjGZHEIELEwsbYFbZw8wKCY01EKTbpV0lHkaCITBQDz1VhmBybytx96N4tc0TKArRI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/authors/1",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE3ZTdmMjQ0YTBkYTMwYTc4NzljY2Y5YTZkZjZkMmFmY2UzNzUzMDc5MWM1ZTk5MTljODcwYjg4ZDg3M2RhYmVlMTU2YjhlOWEwZjk2ZTUiLCJpYXQiOjE2NDQ1MTA2NzksIm5iZiI6MTY0NDUxMDY3OSwiZXhwIjoxNjc2MDQ2Njc5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ehUBCu5ENBMxS9Lx-KfwUbpSdBfJqiXTx0higQ7_uHjEO1t5EZG6sXe7jrxrod3HJcgH1ffAbL6aLSQ68vvp8BKQcDcYOIQzKCQ8uzNqeNj239x9u-8qbBLqAEaVCJSxzdO1TpbmPoak2pBKj5ULL8ewlyHJ7YZ7-10hHo0S2R3EQuKxhv6D_jQygPKlF2en_Vsc1CqQxpPPSkeQqWANyL1tljzzNfShEEYlXvFvcRM2bqiUcYBdSGP8INfIq4wSfEsPEyoUnH06a1QI78fTjVHQMGxn0YFdG4Wa3EETgf1k6s7LIKFezrOmYaiZplzoTMo1uQZlOBbkg0CCgiyeQ-9AhEburv0yeRC6SkwVW9FmLhHa-x61ncLJ_7_eUdAgqU5KXb4CR0awyzLYKMLKrY-3lTUvVDKSBlrLBomsI0fd2W_LsHLrQLeV30aECCcGLOYHSKMqmNLtDIN1QhYRZYMGdo39B9D40DYTmDw4pOXhTRzWS0XGiSyFijBWKZaSUPbmyFCbVPbq4rAUh9qmLBX7oDVpdlKfeZiUKhoCzuqB6GoVmKnaUJ5U_J0iISlOqN8tfHb7BH5mkrbuSQSgdNgUxubAyRZay6TfeSnLYXjGZHEIELEwsbYFbZw8wKCY01EKTbpV0lHkaCITBQDz1VhmBybytx96N4tc0TKArRI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNGJmOTYzMWJmOTQ3MDQzYmZhOTdmMWQwNjU2NmY0ZTg4MjgzMmE0N2I3ZjU2ODUyODQ5MTkwNzc0OTk0ZTRjZWNjNThlNWFlYTIzNTMwMTYiLCJpYXQiOjE2NDQ1ODEwMzAsIm5iZiI6MTY0NDU4MTAzMCwiZXhwIjoxNjc2MTE3MDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TBq_M2bXSFJONo7RtZMvwrLK7rBfS6xIxZAc27TzEdMPiXjVrBIkg1nfNBNvUJ43s-In3Vw_ba2_x358U5Loqfx0_v-BCx6wgIYR5bsN0zxyUdmr2RMrflvKC_3Fjzt1Fk9ypjoOeF6gySrPOoEuNfhaZlPnOOmo46heu9Vq1rBHHDAyFA7zUNh5s8UQwrzX29siiXn4mxgQKaPLCvWUhjs3jW_bozH4UX475xRdpwiWzXcVDwFnv3l2TAceWaQs3hC9CYkbV_zsra7zzokI8ZFaey7nZ_CyM6RWkEu1_6qKxDGdkkrX0Hctgq2P93AkJ8z-QyXK8fy9iI5e670eD_1I1tEzHa2UXSrSBzciowB_-HpXkvUe4y3zym5Sdi_oPUSBYF9iFgnZo9kA8ku25YjdmnezK5Krl7Ysg2bqzjklyhjEb80Tn5gUlQ5SoNiKAWZxh9_10fSyIO8p3E6qr5wWbhkQ94V68TVUqbru6f6nF1jLT5PvaD-kHjfGCcRU7mWGNif3OQzgZZbsS7RnsNdEebm3uLnyDe64e02Go1Cflctyu2fZonJRFvW3HLOqNAIdGF0P85okM19-2Ncd5jll2W6cMqvdlNVHits9Nw4BEzcMyMm4ZWZBQkyOPSVaSwScF6GpARRV1g0hBkrorLwsQeqMhRdb9qz2DIfFmmk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNGJmOTYzMWJmOTQ3MDQzYmZhOTdmMWQwNjU2NmY0ZTg4MjgzMmE0N2I3ZjU2ODUyODQ5MTkwNzc0OTk0ZTRjZWNjNThlNWFlYTIzNTMwMTYiLCJpYXQiOjE2NDQ1ODEwMzAsIm5iZiI6MTY0NDU4MTAzMCwiZXhwIjoxNjc2MTE3MDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TBq_M2bXSFJONo7RtZMvwrLK7rBfS6xIxZAc27TzEdMPiXjVrBIkg1nfNBNvUJ43s-In3Vw_ba2_x358U5Loqfx0_v-BCx6wgIYR5bsN0zxyUdmr2RMrflvKC_3Fjzt1Fk9ypjoOeF6gySrPOoEuNfhaZlPnOOmo46heu9Vq1rBHHDAyFA7zUNh5s8UQwrzX29siiXn4mxgQKaPLCvWUhjs3jW_bozH4UX475xRdpwiWzXcVDwFnv3l2TAceWaQs3hC9CYkbV_zsra7zzokI8ZFaey7nZ_CyM6RWkEu1_6qKxDGdkkrX0Hctgq2P93AkJ8z-QyXK8fy9iI5e670eD_1I1tEzHa2UXSrSBzciowB_-HpXkvUe4y3zym5Sdi_oPUSBYF9iFgnZo9kA8ku25YjdmnezK5Krl7Ysg2bqzjklyhjEb80Tn5gUlQ5SoNiKAWZxh9_10fSyIO8p3E6qr5wWbhkQ94V68TVUqbru6f6nF1jLT5PvaD-kHjfGCcRU7mWGNif3OQzgZZbsS7RnsNdEebm3uLnyDe64e02Go1Cflctyu2fZonJRFvW3HLOqNAIdGF0P85okM19-2Ncd5jll2W6cMqvdlNVHits9Nw4BEzcMyMm4ZWZBQkyOPSVaSwScF6GpARRV1g0hBkrorLwsQeqMhRdb9qz2DIfFmmk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/authors/2?name=Lauriane McGlynn",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Lauriane McGlynn"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNGJmOTYzMWJmOTQ3MDQzYmZhOTdmMWQwNjU2NmY0ZTg4MjgzMmE0N2I3ZjU2ODUyODQ5MTkwNzc0OTk0ZTRjZWNjNThlNWFlYTIzNTMwMTYiLCJpYXQiOjE2NDQ1ODEwMzAsIm5iZiI6MTY0NDU4MTAzMCwiZXhwIjoxNjc2MTE3MDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TBq_M2bXSFJONo7RtZMvwrLK7rBfS6xIxZAc27TzEdMPiXjVrBIkg1nfNBNvUJ43s-In3Vw_ba2_x358U5Loqfx0_v-BCx6wgIYR5bsN0zxyUdmr2RMrflvKC_3Fjzt1Fk9ypjoOeF6gySrPOoEuNfhaZlPnOOmo46heu9Vq1rBHHDAyFA7zUNh5s8UQwrzX29siiXn4mxgQKaPLCvWUhjs3jW_bozH4UX475xRdpwiWzXcVDwFnv3l2TAceWaQs3hC9CYkbV_zsra7zzokI8ZFaey7nZ_CyM6RWkEu1_6qKxDGdkkrX0Hctgq2P93AkJ8z-QyXK8fy9iI5e670eD_1I1tEzHa2UXSrSBzciowB_-HpXkvUe4y3zym5Sdi_oPUSBYF9iFgnZo9kA8ku25YjdmnezK5Krl7Ysg2bqzjklyhjEb80Tn5gUlQ5SoNiKAWZxh9_10fSyIO8p3E6qr5wWbhkQ94V68TVUqbru6f6nF1jLT5PvaD-kHjfGCcRU7mWGNif3OQzgZZbsS7RnsNdEebm3uLnyDe64e02Go1Cflctyu2fZonJRFvW3HLOqNAIdGF0P85okM19-2Ncd5jll2W6cMqvdlNVHits9Nw4BEzcMyMm4ZWZBQkyOPSVaSwScF6GpARRV1g0hBkrorLwsQeqMhRdb9qz2DIfFmmk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/authors/1",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Raf",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE3ZTdmMjQ0YTBkYTMwYTc4NzljY2Y5YTZkZjZkMmFmY2UzNzUzMDc5MWM1ZTk5MTljODcwYjg4ZDg3M2RhYmVlMTU2YjhlOWEwZjk2ZTUiLCJpYXQiOjE2NDQ1MTA2NzksIm5iZiI6MTY0NDUxMDY3OSwiZXhwIjoxNjc2MDQ2Njc5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ehUBCu5ENBMxS9Lx-KfwUbpSdBfJqiXTx0higQ7_uHjEO1t5EZG6sXe7jrxrod3HJcgH1ffAbL6aLSQ68vvp8BKQcDcYOIQzKCQ8uzNqeNj239x9u-8qbBLqAEaVCJSxzdO1TpbmPoak2pBKj5ULL8ewlyHJ7YZ7-10hHo0S2R3EQuKxhv6D_jQygPKlF2en_Vsc1CqQxpPPSkeQqWANyL1tljzzNfShEEYlXvFvcRM2bqiUcYBdSGP8INfIq4wSfEsPEyoUnH06a1QI78fTjVHQMGxn0YFdG4Wa3EETgf1k6s7LIKFezrOmYaiZplzoTMo1uQZlOBbkg0CCgiyeQ-9AhEburv0yeRC6SkwVW9FmLhHa-x61ncLJ_7_eUdAgqU5KXb4CR0awyzLYKMLKrY-3lTUvVDKSBlrLBomsI0fd2W_LsHLrQLeV30aECCcGLOYHSKMqmNLtDIN1QhYRZYMGdo39B9D40DYTmDw4pOXhTRzWS0XGiSyFijBWKZaSUPbmyFCbVPbq4rAUh9qmLBX7oDVpdlKfeZiUKhoCzuqB6GoVmKnaUJ5U_J0iISlOqN8tfHb7BH5mkrbuSQSgdNgUxubAyRZay6TfeSnLYXjGZHEIELEwsbYFbZw8wKCY01EKTbpV0lHkaCITBQDz1VhmBybytx96N4tc0TKArRI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNGJmOTYzMWJmOTQ3MDQzYmZhOTdmMWQwNjU2NmY0ZTg4MjgzMmE0N2I3ZjU2ODUyODQ5MTkwNzc0OTk0ZTRjZWNjNThlNWFlYTIzNTMwMTYiLCJpYXQiOjE2NDQ1ODEwMzAsIm5iZiI6MTY0NDU4MTAzMCwiZXhwIjoxNjc2MTE3MDMwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TBq_M2bXSFJONo7RtZMvwrLK7rBfS6xIxZAc27TzEdMPiXjVrBIkg1nfNBNvUJ43s-In3Vw_ba2_x358U5Loqfx0_v-BCx6wgIYR5bsN0zxyUdmr2RMrflvKC_3Fjzt1Fk9ypjoOeF6gySrPOoEuNfhaZlPnOOmo46heu9Vq1rBHHDAyFA7zUNh5s8UQwrzX29siiXn4mxgQKaPLCvWUhjs3jW_bozH4UX475xRdpwiWzXcVDwFnv3l2TAceWaQs3hC9CYkbV_zsra7zzokI8ZFaey7nZ_CyM6RWkEu1_6qKxDGdkkrX0Hctgq2P93AkJ8z-QyXK8fy9iI5e670eD_1I1tEzHa2UXSrSBzciowB_-HpXkvUe4y3zym5Sdi_oPUSBYF9iFgnZo9kA8ku25YjdmnezK5Krl7Ysg2bqzjklyhjEb80Tn5gUlQ5SoNiKAWZxh9_10fSyIO8p3E6qr5wWbhkQ94V68TVUqbru6f6nF1jLT5PvaD-kHjfGCcRU7mWGNif3OQzgZZbsS7RnsNdEebm3uLnyDe64e02Go1Cflctyu2fZonJRFvW3HLOqNAIdGF0P85okM19-2Ncd5jll2W6cMqvdlNVHits9Nw4BEzcMyMm4ZWZBQkyOPSVaSwScF6GpARRV1g0hBkrorLwsQeqMhRdb9qz2DIfFmmk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book get",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE3ZTdmMjQ0YTBkYTMwYTc4NzljY2Y5YTZkZjZkMmFmY2UzNzUzMDc5MWM1ZTk5MTljODcwYjg4ZDg3M2RhYmVlMTU2YjhlOWEwZjk2ZTUiLCJpYXQiOjE2NDQ1MTA2NzksIm5iZiI6MTY0NDUxMDY3OSwiZXhwIjoxNjc2MDQ2Njc5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ehUBCu5ENBMxS9Lx-KfwUbpSdBfJqiXTx0higQ7_uHjEO1t5EZG6sXe7jrxrod3HJcgH1ffAbL6aLSQ68vvp8BKQcDcYOIQzKCQ8uzNqeNj239x9u-8qbBLqAEaVCJSxzdO1TpbmPoak2pBKj5ULL8ewlyHJ7YZ7-10hHo0S2R3EQuKxhv6D_jQygPKlF2en_Vsc1CqQxpPPSkeQqWANyL1tljzzNfShEEYlXvFvcRM2bqiUcYBdSGP8INfIq4wSfEsPEyoUnH06a1QI78fTjVHQMGxn0YFdG4Wa3EETgf1k6s7LIKFezrOmYaiZplzoTMo1uQZlOBbkg0CCgiyeQ-9AhEburv0yeRC6SkwVW9FmLhHa-x61ncLJ_7_eUdAgqU5KXb4CR0awyzLYKMLKrY-3lTUvVDKSBlrLBomsI0fd2W_LsHLrQLeV30aECCcGLOYHSKMqmNLtDIN1QhYRZYMGdo39B9D40DYTmDw4pOXhTRzWS0XGiSyFijBWKZaSUPbmyFCbVPbq4rAUh9qmLBX7oDVpdlKfeZiUKhoCzuqB6GoVmKnaUJ5U_J0iISlOqN8tfHb7BH5mkrbuSQSgdNgUxubAyRZay6TfeSnLYXjGZHEIELEwsbYFbZw8wKCY01EKTbpV0lHkaCITBQDz1VhmBybytx96N4tc0TKArRI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/books/1",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE3ZTdmMjQ0YTBkYTMwYTc4NzljY2Y5YTZkZjZkMmFmY2UzNzUzMDc5MWM1ZTk5MTljODcwYjg4ZDg3M2RhYmVlMTU2YjhlOWEwZjk2ZTUiLCJpYXQiOjE2NDQ1MTA2NzksIm5iZiI6MTY0NDUxMDY3OSwiZXhwIjoxNjc2MDQ2Njc5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ehUBCu5ENBMxS9Lx-KfwUbpSdBfJqiXTx0higQ7_uHjEO1t5EZG6sXe7jrxrod3HJcgH1ffAbL6aLSQ68vvp8BKQcDcYOIQzKCQ8uzNqeNj239x9u-8qbBLqAEaVCJSxzdO1TpbmPoak2pBKj5ULL8ewlyHJ7YZ7-10hHo0S2R3EQuKxhv6D_jQygPKlF2en_Vsc1CqQxpPPSkeQqWANyL1tljzzNfShEEYlXvFvcRM2bqiUcYBdSGP8INfIq4wSfEsPEyoUnH06a1QI78fTjVHQMGxn0YFdG4Wa3EETgf1k6s7LIKFezrOmYaiZplzoTMo1uQZlOBbkg0CCgiyeQ-9AhEburv0yeRC6SkwVW9FmLhHa-x61ncLJ_7_eUdAgqU5KXb4CR0awyzLYKMLKrY-3lTUvVDKSBlrLBomsI0fd2W_LsHLrQLeV30aECCcGLOYHSKMqmNLtDIN1QhYRZYMGdo39B9D40DYTmDw4pOXhTRzWS0XGiSyFijBWKZaSUPbmyFCbVPbq4rAUh9qmLBX7oDVpdlKfeZiUKhoCzuqB6GoVmKnaUJ5U_J0iISlOqN8tfHb7BH5mkrbuSQSgdNgUxubAyRZay6TfeSnLYXjGZHEIELEwsbYFbZw8wKCY01EKTbpV0lHkaCITBQDz1VhmBybytx96N4tc0TKArRI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bookstore.test/api/v1/books/1",
+					"protocol": "http",
+					"host": [
+						"bookstore",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
